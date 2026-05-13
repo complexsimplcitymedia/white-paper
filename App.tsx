@@ -97,7 +97,13 @@ const App: React.FC = () => {
             <a href="#universal" onClick={scrollToSection('universal')} className="hover:text-wolf-cyan">Universal Node</a>
             <a href="#mesh" onClick={scrollToSection('mesh')} className="hover:text-wolf-cyan">Node Mesh</a>
             <a href="#repos" onClick={scrollToSection('repos')} className="hover:text-wolf-cyan">Repositories</a>
-            <button onClick={() => setMenuOpen(false)} className="px-8 py-4 bg-wolf-cyan text-wolf-dark rounded-full font-bold">Access Mesh</button>
+            <a
+              href="https://wolflogic-ai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="px-8 py-4 bg-wolf-cyan text-wolf-dark rounded-full font-bold"
+            >Access Mesh</a>
         </div>
       )}
 
@@ -130,12 +136,22 @@ const App: React.FC = () => {
           
           <div className="flex flex-col items-center gap-12">
              <div className="flex flex-wrap justify-center gap-4">
-                <button className="px-8 py-4 bg-white text-wolf-dark rounded-xl font-bold hover:bg-wolf-cyan transition-all flex items-center gap-2 shadow-2xl shadow-wolf-cyan/20">
+                <a
+                  href="https://wolflogic-ai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-white text-wolf-dark rounded-xl font-bold hover:bg-wolf-cyan transition-all flex items-center gap-2 shadow-2xl shadow-wolf-cyan/20"
+                >
                    <Globe size={18} /> Visit Production Site
-                </button>
-                <button className="px-8 py-4 border border-white/20 text-white rounded-xl font-bold hover:bg-white/5 transition-all flex items-center gap-2">
+                </a>
+                <a
+                  href="https://realtime.wolflogic-ai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 border border-white/20 text-white rounded-xl font-bold hover:bg-white/5 transition-all flex items-center gap-2"
+                >
                    <Activity size={18} /> Node Status
-                </button>
+                </a>
              </div>
              
              <a href="#abstract" onClick={scrollToSection('abstract')} className="group flex flex-col items-center gap-3 text-xs font-bold text-wolf-silver/40 hover:text-wolf-cyan transition-colors">
@@ -279,12 +295,22 @@ const App: React.FC = () => {
                     <h2 className="font-serif text-4xl md:text-6xl text-white font-bold mb-8 relative z-10 tracking-tight">The Wolf Never Forgets</h2>
                     <p className="text-xl text-wolf-silver/80 mb-12 relative z-10">Deploy your Android or Desktop node now. The wolf always eats. The wolf never forgets.</p>
                     <div className="flex flex-wrap justify-center gap-4 relative z-10">
-                        <button className="px-10 py-4 bg-white text-wolf-dark font-black rounded-2xl hover:bg-wolf-cyan hover:scale-105 transition-all shadow-xl flex items-center gap-3 font-mono tracking-tighter">
+                        <a
+                          href="https://auth.complexsimplicityai.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-10 py-4 bg-white text-wolf-dark font-black rounded-2xl hover:bg-wolf-cyan hover:scale-105 transition-all shadow-xl flex items-center gap-3 font-mono tracking-tighter"
+                        >
                             <Shield size={20} /> SECURE SSO LOGIN
-                        </button>
-                        <button className="px-10 py-4 border border-white/20 text-white font-bold rounded-2xl hover:bg-white/10 transition-all font-mono tracking-tighter">
+                        </a>
+                        <a
+                          href="https://grafana.wolf-logic-ai.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-10 py-4 border border-white/20 text-white font-bold rounded-2xl hover:bg-white/10 transition-all font-mono tracking-tighter"
+                        >
                             NODE EXPLORER
-                        </button>
+                        </a>
                     </div>
                     <p className="mt-8 text-xs text-wolf-silver/40 font-mono uppercase tracking-widest italic font-bold">Every AI Model. Every OS. Every Person.</p>
                 </div>
@@ -317,9 +343,18 @@ const App: React.FC = () => {
                 <div className="space-y-4">
                     <h4 className="text-white font-bold text-xs uppercase tracking-widest text-wolf-cyan">Access Nodes</h4>
                     <nav className="flex flex-col gap-2 text-wolf-silver/40 text-sm font-medium">
-                        <a href="#" className="hover:text-wolf-cyan transition-colors">Android Mesh Client</a>
-                        <a href="#" className="hover:text-wolf-cyan transition-colors">Universal Desktop EXE</a>
-                        <a href="#" className="hover:text-wolf-cyan transition-colors">Ollama Local Cluster</a>
+                        <a href="#contact" onClick={scrollToSection('contact')} className="hover:text-wolf-cyan transition-colors flex items-center gap-2">
+                          Android Mesh Client
+                          <span className="text-[9px] px-1.5 py-0.5 bg-wolf-cyan/10 text-wolf-cyan font-mono rounded">SOON</span>
+                        </a>
+                        <a href="#contact" onClick={scrollToSection('contact')} className="hover:text-wolf-cyan transition-colors flex items-center gap-2">
+                          Universal Desktop EXE
+                          <span className="text-[9px] px-1.5 py-0.5 bg-wolf-cyan/10 text-wolf-cyan font-mono rounded">SOON</span>
+                        </a>
+                        <a href="#contact" onClick={scrollToSection('contact')} className="hover:text-wolf-cyan transition-colors flex items-center gap-2">
+                          Ollama Local Cluster
+                          <span className="text-[9px] px-1.5 py-0.5 bg-wolf-cyan/10 text-wolf-cyan font-mono rounded">SOON</span>
+                        </a>
                     </nav>
                 </div>
             </div>
@@ -327,15 +362,15 @@ const App: React.FC = () => {
             <div className="space-y-6">
                 <h4 className="text-white font-bold text-xs uppercase tracking-widest text-wolf-cyan">Global Connect</h4>
                 <div className="flex gap-4">
-                    <a href="https://github.com/complexsimplcitymedia" target="_blank" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
+                    <a href="https://github.com/complexsimplcitymedia" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
                         <Github size={18} />
                     </a>
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
+                    <a href="#contact" onClick={scrollToSection('contact')} aria-label="Android node access" title="Android Mesh Client" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
                         <Smartphone size={18} />
-                    </div>
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
+                    </a>
+                    <a href="#contact" onClick={scrollToSection('contact')} aria-label="Universal Desktop access" title="Universal Desktop Node" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-wolf-silver/60 hover:text-wolf-cyan hover:bg-white/10 transition-all cursor-pointer">
                         <Monitor size={18} />
-                    </div>
+                    </a>
                 </div>
                 <p className="text-wolf-silver/30 text-xs font-mono">Status: 50+ LLMs / 310+ MCPs / Every OS</p>
                 <img src={brandingImg} alt="Wolf Small" className="w-6 h-6 rounded-full opacity-20 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-help" />
